@@ -1,0 +1,32 @@
+{
+  "info": {
+    "name": "Research Knowledge Graph API",
+    "description": "Smoke tests for the FastAPI endpoints. Start the API and load sample_graph.json before running graph queries.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8000"}
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "request": {"method": "GET", "url": "{{baseUrl}}/health"}
+    },
+    {
+      "name": "Graph stats",
+      "request": {"method": "GET", "url": "{{baseUrl}}/graph/stats"}
+    },
+    {
+      "name": "Author collaboration network",
+      "request": {"method": "GET", "url": "{{baseUrl}}/authors/A-001/network?limit=10"}
+    },
+    {
+      "name": "Work details",
+      "request": {"method": "GET", "url": "{{baseUrl}}/works/W-001"}
+    },
+    {
+      "name": "Unknown author returns 404",
+      "request": {"method": "GET", "url": "{{baseUrl}}/authors/does-not-exist/network"}
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "authors": [
+    {
+      "id": "A-001",
+      "name": "Alex Morgan",
+      "orcid": null,
+      "institution_ids": ["I-001"]
+    },
+    {
+      "id": "A-002",
+      "name": "Sam Lee",
+      "orcid": null,
+      "institution_ids": ["I-001", "I-002"]
+    },
+    {
+      "id": "A-003",
+      "name": "Jamie Chen",
+      "orcid": null,
+      "institution_ids": ["I-002"]
+    }
+  ],
+  "institutions": [
+    {"id": "I-001", "name": "Northstar Research Institute", "country_code": "FR"},
+    {"id": "I-002", "name": "Example Technical University", "country_code": "DE"}
+  ],
+  "topics": [
+    {"id": "T-001", "name": "Knowledge Graphs"},
+    {"id": "T-002", "name": "Data Engineering"},
+    {"id": "T-003", "name": "Machine Learning"}
+  ],
+  "works": [
+    {
+      "id": "W-001",
+      "title": "Building Reliable Research Knowledge Graphs",
+      "year": 2024,
+      "citation_count": 12,
+      "author_ids": ["A-001", "A-002"],
+      "topic_ids": ["T-001", "T-002"],
+      "references": ["W-002"]
+    },
+    {
+      "id": "W-002",
+      "title": "Practical Data Quality for Scholarly Metadata",
+      "year": 2023,
+      "citation_count": 7,
+      "author_ids": ["A-002", "A-003"],
+      "topic_ids": ["T-002"],
+      "references": []
+    },
+    {
+      "id": "W-003",
+      "title": "Topic Modelling in Open Research Data",
+      "year": 2025,
+      "citation_count": 3,
+      "author_ids": ["A-001", "A-003"],
+      "topic_ids": ["T-003", "T-001"],
+      "references": ["W-001", "W-002"]
+    }
+  ]
+}
