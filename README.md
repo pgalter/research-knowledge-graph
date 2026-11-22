@@ -4,9 +4,6 @@ An end-to-end data engineering portfolio project that turns scholarly metadata i
 
 > The checked-in dataset is synthetic and exists for local demos and automated tests. The optional OpenAlex client retrieves real scholarly metadata from the OpenAlex REST API.
 
-## GitHub repository description
-
-**End-to-end OpenAlex ingestion pipeline and Neo4j research knowledge graph with data-quality checks, FastAPI endpoints, pytest coverage, Postman collection, and optional Airflow scheduling.**
 
 ## What it does
 
